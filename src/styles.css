@@ -21,6 +21,7 @@ body {
 
 .img-responsive {
   max-width: 80%;
+  grid-gap: block;
 }
 
 .grid-2-columns {
@@ -37,6 +38,15 @@ body {
 
 .card {
   background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 0px 30px 30px;
+}
+
+.card-footer {
+  padding: 30px;
 }
 
 .btn {
@@ -117,7 +127,7 @@ main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-
+  margin: 0;
   letter-spacing: 5px;
   color: #272044;
   opacity: 0.3;
@@ -134,15 +144,18 @@ main h3 {
 main h4 {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1;
   color: #272044;
+  margin: 0;
+  margin-top: 5px;
 }
 
 main h5 {
   font-weight: 700;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1;
   color: #272044;
+  margin: 0;
 }
 main p {
   font-style: normal;
