@@ -15,17 +15,16 @@ body {
 .grid {
   display: grid;
   grid-gap: 64px;
-
-  grid-gap: 32px;
 }
 
 .img-responsive {
-  max-width: 80%;
-  grid-gap: block;
+  max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
 }
 
 .grid-3-columns {
@@ -36,17 +35,27 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+  margin: 0;
+}
+
 .card {
-  background-color: white;
+  background: white;
   margin: 30px 0;
 }
 
 .card-body {
-  padding: 0px 30px 30px;
+  padding: 30px;
+}
+
+.card-header .grid {
+  grid-gap: 0;
 }
 
 .card-footer {
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 
 .btn {
@@ -74,7 +83,7 @@ section.secondary {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/jp.1bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,6 +103,7 @@ header h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
+  margin: 0;
 }
 
 header h3 {
@@ -141,39 +151,42 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+
 main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
   color: #272044;
   margin: 0;
-  margin-top: 5px;
 }
 
 main h5 {
   font-weight: 700;
   font-size: 13px;
+  margin: 0;
   line-height: 1;
   color: #272044;
-  margin: 0;
 }
+
 main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
+
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(30, 30, 30, 0.9),
+      rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
     url("../images/city3.jpg");
-  background-size: cover;
+
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -185,13 +198,14 @@ footer h3 {
 footer p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   opacity: 0.7;
+  line-height: 24px;
 }
 
 footer ul {
   padding: 0;
 }
+
 footer li {
   list-style: none;
   margin: 0;
@@ -207,6 +221,7 @@ footer a {
   header {
     padding: 60px 0;
   }
+
   header h1 {
     font-size: 48px;
   }
@@ -218,8 +233,21 @@ footer a {
   header h3 {
     font-size: 12px;
   }
-}
 
-section {
-  padding: 30px;
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
 }
