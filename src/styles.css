@@ -68,7 +68,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #462cb3;
+  background-color: #5b4a45;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ section {
 }
 
 section.secondary {
-  background: #e5e7e8;
+  background: #f3eeee;
 }
 
 header {
