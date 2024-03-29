@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: #2b0f40;
 }
 
 .container {
@@ -79,7 +79,7 @@ section {
 }
 
 section.secondary {
-  background: #f8f8f8;
+  background: #e5e7e8;
 }
 
 header {
@@ -126,7 +126,7 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
+  background: rgb(255, 253, 253);
 }
 
 main {
