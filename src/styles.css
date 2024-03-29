@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #2b0f40;
+  background: #100617;
 }
 
 .container {
@@ -68,7 +68,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #5b4a45;
+  background-color: #3f233b;
   text-decoration: none;
 }
 
@@ -79,11 +79,16 @@ section {
 }
 
 section.secondary {
-  background: #f3eeee;
+  background: #59556e;
+}
+
+.page2 {
+  text-align: center;
+  color: rgb(241, 236, 236);
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("../images/jp.1bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
